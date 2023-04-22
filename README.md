@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# MBTI Test
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple web application that allows users to take a Myers-Briggs Type Indicator (MBTI) test consisting of 20 questions and get their MBTI personality result. The project was built using React for the front-end and JSON as the backend.
 
-## Available Scripts
+## Project Summary
 
-In the project directory, you can run:
+The MBTI Test project is designed to provide users with a quick and easy way to determine their MBTI personality type. The user interface is clean and user-friendly, allowing users to answer 20 questions in a straightforward manner. Once the test is completed, the user will receive their MBTI personality type result, based on their answers.
 
-### `npm start`
+The project also includes brief summaries of the different personality types on the home page, providing users with a general overview of each type's characteristics. This allows users to learn more about themselves and others based on their personality type.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To get started with the MBTI Test project, follow these steps:
 
-### `npm test`
+1. Install all the necessary packages by running `npm install` in the project directory.
+2. Navigate into the `mbti-test` folder and start the front-end React app by running `npm start` in the terminal.
+3. To start the JSON backend, go into the `public` folder directory and start two JSON servers using the following commands:
+   - `json-server --watch questions.json -p 3001`
+   - `json-server --watch mbti-personality.json -p 3002`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
 
-### `npm run build`
+The MBTI Test project includes the following features:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- 20-question MBTI test to determine user's personality type
+- JSON backend to store questions and personality type data
+- Brief summaries of different MBTI personality types on the home page
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Technologies Used
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The MBTI Test project was built using the following technologies:
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- React
+- JSON
+- JSON-server

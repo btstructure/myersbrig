@@ -1,9 +1,5 @@
 import React, { useState, useEffect } from "react";
 import PersonalityQuiz from "./PersonalityQuiz";
-import Home from "./Home";
-import NavBar from "./NavBar";
-import { Route, Routes } from "react-router-dom";
-import "./App.css"
 
 function App() {
   const [questionList, setQuestionList] = useState([]);
@@ -14,17 +10,13 @@ function App() {
       .then((data) => setQuestionList(data));
   }, []);
 
+  
   return (
-    <>
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route
-          path="mbti-test"
-          element={<PersonalityQuiz questionList={questionList} />}
-        />
-      </Routes>
-    </>
+    <div>
+      <div>
+        <PersonalityQuiz questionList={questionList} />
+      </div>
+    </div>
   );
 }
 
