@@ -8,7 +8,7 @@ function PersonalityList() {
   const [modalOpen, setModalOpen] = useState(false);
 
   useEffect(() => {
-    fetch("http://localhost:3002/personality")
+    fetch("https://mbti-backend.onrender.com/personality")
       .then((res) => res.json())
       .then((data) => setPersonalityList(data));
   }, []);
