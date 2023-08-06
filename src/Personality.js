@@ -5,7 +5,7 @@ function App() {
   const [questionList, setQuestionList] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3001/questions")
+    fetch("https://mbti-backend.onrender.com/personality")
       .then((res) => res.json())
       .then((data) => setQuestionList(data));
   }, []);
